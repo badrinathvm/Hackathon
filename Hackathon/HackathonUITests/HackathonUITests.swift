@@ -7,9 +7,6 @@
 //
 
 import XCTest
-import Quick
-import Nimble
-
 
 class HackathonUITests: XCTestCase {
         
