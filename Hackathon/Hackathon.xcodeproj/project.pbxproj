@@ -20,6 +20,18 @@
 		052AEE631FB418D800F799D0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 052AEE611FB418D800F799D0 /* MainInterface.storyboard */; };
 		052AEE651FB418D800F799D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 052AEE641FB418D800F799D0 /* Assets.xcassets */; };
 		052AEE691FB418D800F799D0 /* HackathonMessage.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 052AEE5A1FB418D300F799D0 /* HackathonMessage.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		056424E21FB6D117008028A6 /* DataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056424D91FB6D117008028A6 /* DataKit.framework */; };
+		056424E91FB6D117008028A6 /* DataKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056424E81FB6D117008028A6 /* DataKitTests.swift */; };
+		056424EB1FB6D117008028A6 /* DataKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 056424DB1FB6D117008028A6 /* DataKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		056424EE1FB6D117008028A6 /* DataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056424D91FB6D117008028A6 /* DataKit.framework */; };
+		056424EF1FB6D117008028A6 /* DataKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 056424D91FB6D117008028A6 /* DataKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		056424F81FB6D4A5008028A6 /* ServiceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056424F71FB6D4A5008028A6 /* ServiceData.swift */; };
+		05BE888E1FB791B500C3AF5D /* BagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE888D1FB791B500C3AF5D /* BagTableViewCell.swift */; };
+		05BE88911FB7B3E900C3AF5D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE88901FB7B3E900C3AF5D /* NetworkService.swift */; };
+		05BE88941FB7B6C000C3AF5D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE88931FB7B6C000C3AF5D /* Product.swift */; };
+		05FFFC341FB6D922006AA8A7 /* HMSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FFFC331FB6D893006AA8A7 /* HMSegmentedControl.swift */; };
+		05FFFC351FB6D924006AA8A7 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FFFC311FB6D893006AA8A7 /* Enums.swift */; };
+		05FFFC361FB6D927006AA8A7 /* HMScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FFFC321FB6D893006AA8A7 /* HMScrollView.swift */; };
 		41E4838C9805E764F8A9CF7B /* Pods_Hackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D9A457637352A396E62D99 /* Pods_Hackathon.framework */; };
 		6B33AB8540ED4588BF13AD17 /* Pods_HackathonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9B8954B6066918E99D36A2 /* Pods_HackathonTests.framework */; };
 		7D9B275C087F5F5B9DA18F4E /* Pods_HackathonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CC02D6529591E4E93F1B4F /* Pods_HackathonUITests.framework */; };
@@ -48,6 +60,27 @@
 			remoteGlobalIDString = 052AEE591FB418D300F799D0;
 			remoteInfo = HackathonMessage;
 		};
+		056424E31FB6D117008028A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 052AEE1A1FB4188500F799D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 056424D81FB6D117008028A6;
+			remoteInfo = DataKit;
+		};
+		056424E51FB6D117008028A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 052AEE1A1FB4188500F799D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 052AEE211FB4188500F799D0;
+			remoteInfo = Hackathon;
+		};
+		056424EC1FB6D117008028A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 052AEE1A1FB4188500F799D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 056424D81FB6D117008028A6;
+			remoteInfo = DataKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +93,17 @@
 				052AEE691FB418D800F799D0 /* HackathonMessage.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056424F51FB6D118008028A6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				056424EF1FB6D117008028A6 /* DataKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -85,6 +129,22 @@
 		052AEE621FB418D800F799D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		052AEE641FB418D800F799D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		052AEE661FB418D800F799D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		056424D91FB6D117008028A6 /* DataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		056424DB1FB6D117008028A6 /* DataKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataKit.h; sourceTree = "<group>"; };
+		056424DC1FB6D117008028A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		056424E11FB6D117008028A6 /* DataKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		056424E81FB6D117008028A6 /* DataKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataKitTests.swift; sourceTree = "<group>"; };
+		056424EA1FB6D117008028A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		056424F71FB6D4A5008028A6 /* ServiceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceData.swift; sourceTree = "<group>"; };
+		05BE888D1FB791B500C3AF5D /* BagTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagTableViewCell.swift; sourceTree = "<group>"; };
+		05BE88901FB7B3E900C3AF5D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		05BE88931FB7B6C000C3AF5D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		05BE88951FB7B7C500C3AF5D /* no_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = no_image.jpg; sourceTree = "<group>"; };
+		05FFFC311FB6D893006AA8A7 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		05FFFC321FB6D893006AA8A7 /* HMScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMScrollView.swift; sourceTree = "<group>"; };
+		05FFFC331FB6D893006AA8A7 /* HMSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMSegmentedControl.swift; sourceTree = "<group>"; };
+		05FFFC371FB6DA08006AA8A7 /* Hackathon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hackathon.entitlements; sourceTree = "<group>"; };
+		05FFFC381FB6DA28006AA8A7 /* HackathonMessage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HackathonMessage.entitlements; sourceTree = "<group>"; };
 		16D3A14572F2778B9DAB4BA5 /* Pods-Hackathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon/Pods-Hackathon.release.xcconfig"; sourceTree = "<group>"; };
 		1C5C2D2B7A51F9F2EF67490E /* Pods-Hackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon/Pods-Hackathon.debug.xcconfig"; sourceTree = "<group>"; };
 		1E9B8954B6066918E99D36A2 /* Pods_HackathonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackathonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41E4838C9805E764F8A9CF7B /* Pods_Hackathon.framework in Frameworks */,
+				056424EE1FB6D117008028A6 /* DataKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +194,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		056424D51FB6D117008028A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056424DE1FB6D117008028A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056424E21FB6D117008028A6 /* DataKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -143,6 +219,8 @@
 				052AEE3C1FB4188600F799D0 /* HackathonTests */,
 				052AEE471FB4188600F799D0 /* HackathonUITests */,
 				052AEE5E1FB418D800F799D0 /* HackathonMessage */,
+				056424DA1FB6D117008028A6 /* DataKit */,
+				056424E71FB6D117008028A6 /* DataKitTests */,
 				052AEE5B1FB418D400F799D0 /* Frameworks */,
 				052AEE231FB4188500F799D0 /* Products */,
 				0563F8F348AA7658532A857E /* Pods */,
@@ -156,6 +234,8 @@
 				052AEE391FB4188600F799D0 /* HackathonTests.xctest */,
 				052AEE441FB4188600F799D0 /* HackathonUITests.xctest */,
 				052AEE5A1FB418D300F799D0 /* HackathonMessage.appex */,
+				056424D91FB6D117008028A6 /* DataKit.framework */,
+				056424E11FB6D117008028A6 /* DataKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,6 +243,7 @@
 		052AEE241FB4188500F799D0 /* Hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				05FFFC371FB6DA08006AA8A7 /* Hackathon.entitlements */,
 				052AEE251FB4188500F799D0 /* AppDelegate.swift */,
 				056424D11FB51AD1008028A6 /* Controllers */,
 				052AEE291FB4188500F799D0 /* Main.storyboard */,
@@ -207,9 +288,17 @@
 		052AEE5E1FB418D800F799D0 /* HackathonMessage */ = {
 			isa = PBXGroup;
 			children = (
+				05BE88921FB7B6A100C3AF5D /* Model */,
+				05BE888F1FB7B3CF00C3AF5D /* Network */,
+				05BE888A1FB7916D00C3AF5D /* View */,
+				05FFFC381FB6DA28006AA8A7 /* HackathonMessage.entitlements */,
+				05FFFC321FB6D893006AA8A7 /* HMScrollView.swift */,
+				05FFFC311FB6D893006AA8A7 /* Enums.swift */,
+				05FFFC331FB6D893006AA8A7 /* HMSegmentedControl.swift */,
 				052AEE5F1FB418D800F799D0 /* MessagesViewController.swift */,
 				052AEE611FB418D800F799D0 /* MainInterface.storyboard */,
 				052AEE641FB418D800F799D0 /* Assets.xcassets */,
+				05BE88951FB7B7C500C3AF5D /* no_image.jpg */,
 				052AEE661FB418D800F799D0 /* Info.plist */,
 			);
 			path = HackathonMessage;
@@ -238,7 +327,61 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		056424DA1FB6D117008028A6 /* DataKit */ = {
+			isa = PBXGroup;
+			children = (
+				056424DB1FB6D117008028A6 /* DataKit.h */,
+				056424DC1FB6D117008028A6 /* Info.plist */,
+				056424F71FB6D4A5008028A6 /* ServiceData.swift */,
+			);
+			path = DataKit;
+			sourceTree = "<group>";
+		};
+		056424E71FB6D117008028A6 /* DataKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				056424E81FB6D117008028A6 /* DataKitTests.swift */,
+				056424EA1FB6D117008028A6 /* Info.plist */,
+			);
+			path = DataKitTests;
+			sourceTree = "<group>";
+		};
+		05BE888A1FB7916D00C3AF5D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05BE888D1FB791B500C3AF5D /* BagTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		05BE888F1FB7B3CF00C3AF5D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				05BE88901FB7B3E900C3AF5D /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		05BE88921FB7B6A100C3AF5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05BE88931FB7B6C000C3AF5D /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		056424D61FB6D117008028A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056424EB1FB6D117008028A6 /* DataKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		052AEE211FB4188500F799D0 /* Hackathon */ = {
@@ -252,11 +395,13 @@
 				052AEE6D1FB418DC00F799D0 /* Embed App Extensions */,
 				FA4F0F2FC71866E6E351F8F8 /* [CP] Embed Pods Frameworks */,
 				A15D1C2D6BA8B8D0FCBA975C /* [CP] Copy Pods Resources */,
+				056424F51FB6D118008028A6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				052AEE681FB418D800F799D0 /* PBXTargetDependency */,
+				056424ED1FB6D117008028A6 /* PBXTargetDependency */,
 			);
 			name = Hackathon;
 			productName = Hackathon;
@@ -324,6 +469,43 @@
 			productReference = 052AEE5A1FB418D300F799D0 /* HackathonMessage.appex */;
 			productType = "com.apple.product-type.app-extension.messages";
 		};
+		056424D81FB6D117008028A6 /* DataKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 056424F41FB6D118008028A6 /* Build configuration list for PBXNativeTarget "DataKit" */;
+			buildPhases = (
+				056424D41FB6D117008028A6 /* Sources */,
+				056424D51FB6D117008028A6 /* Frameworks */,
+				056424D61FB6D117008028A6 /* Headers */,
+				056424D71FB6D117008028A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataKit;
+			productName = DataKit;
+			productReference = 056424D91FB6D117008028A6 /* DataKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		056424E01FB6D117008028A6 /* DataKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 056424F61FB6D118008028A6 /* Build configuration list for PBXNativeTarget "DataKitTests" */;
+			buildPhases = (
+				056424DD1FB6D117008028A6 /* Sources */,
+				056424DE1FB6D117008028A6 /* Frameworks */,
+				056424DF1FB6D117008028A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				056424E41FB6D117008028A6 /* PBXTargetDependency */,
+				056424E61FB6D117008028A6 /* PBXTargetDependency */,
+			);
+			name = DataKitTests;
+			productName = DataKitTests;
+			productReference = 056424E11FB6D117008028A6 /* DataKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -337,6 +519,11 @@
 					052AEE211FB4188500F799D0 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					052AEE381FB4188600F799D0 = {
 						CreatedOnToolsVersion = 9.0;
@@ -351,6 +538,21 @@
 					052AEE591FB418D300F799D0 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					056424D81FB6D117008028A6 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					056424E01FB6D117008028A6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 052AEE211FB4188500F799D0;
 					};
 				};
 			};
@@ -371,6 +573,8 @@
 				052AEE381FB4188600F799D0 /* HackathonTests */,
 				052AEE431FB4188600F799D0 /* HackathonUITests */,
 				052AEE591FB418D300F799D0 /* HackathonMessage */,
+				056424D81FB6D117008028A6 /* DataKit */,
+				056424E01FB6D117008028A6 /* DataKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -406,6 +610,20 @@
 			files = (
 				052AEE651FB418D800F799D0 /* Assets.xcassets in Resources */,
 				052AEE631FB418D800F799D0 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056424D71FB6D117008028A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056424DF1FB6D117008028A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,7 +828,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05BE888E1FB791B500C3AF5D /* BagTableViewCell.swift in Sources */,
+				05FFFC361FB6D927006AA8A7 /* HMScrollView.swift in Sources */,
 				052AEE601FB418D800F799D0 /* MessagesViewController.swift in Sources */,
+				05FFFC351FB6D924006AA8A7 /* Enums.swift in Sources */,
+				05BE88911FB7B3E900C3AF5D /* NetworkService.swift in Sources */,
+				05FFFC341FB6D922006AA8A7 /* HMSegmentedControl.swift in Sources */,
+				05BE88941FB7B6C000C3AF5D /* Product.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056424D41FB6D117008028A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056424F81FB6D4A5008028A6 /* ServiceData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		056424DD1FB6D117008028A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				056424E91FB6D117008028A6 /* DataKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,6 +871,21 @@
 			isa = PBXTargetDependency;
 			target = 052AEE591FB418D300F799D0 /* HackathonMessage */;
 			targetProxy = 052AEE671FB418D800F799D0 /* PBXContainerItemProxy */;
+		};
+		056424E41FB6D117008028A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 056424D81FB6D117008028A6 /* DataKit */;
+			targetProxy = 056424E31FB6D117008028A6 /* PBXContainerItemProxy */;
+		};
+		056424E61FB6D117008028A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 052AEE211FB4188500F799D0 /* Hackathon */;
+			targetProxy = 056424E51FB6D117008028A6 /* PBXContainerItemProxy */;
+		};
+		056424ED1FB6D117008028A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 056424D81FB6D117008028A6 /* DataKit */;
+			targetProxy = 056424EC1FB6D117008028A6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -694,6 +949,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -751,6 +1007,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -775,14 +1032,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Hackathon/Hackathon.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BW3GXH3U84;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Hackathon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.badrinath.Hackathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -792,14 +1051,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Hackathon/Hackathon.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BW3GXH3U84;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Hackathon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.badrinath.Hackathon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -878,6 +1139,7 @@
 			baseConfigurationReference = 2FD21AE1490A569CF17E2CC2 /* Pods-HackathonMessage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = HackathonMessage/HackathonMessage.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BW3GXH3U84;
 				INFOPLIST_FILE = HackathonMessage/Info.plist;
@@ -895,6 +1157,7 @@
 			baseConfigurationReference = 6D1C5A07EC3E1E867C1F9E1B /* Pods-HackathonMessage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_ENTITLEMENTS = HackathonMessage/HackathonMessage.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BW3GXH3U84;
 				INFOPLIST_FILE = HackathonMessage/Info.plist;
@@ -904,6 +1167,89 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		056424F01FB6D118008028A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BW3GXH3U84;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DataKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.badrinath.DataKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		056424F11FB6D118008028A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BW3GXH3U84;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DataKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.badrinath.DataKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		056424F21FB6D118008028A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BW3GXH3U84;
+				INFOPLIST_FILE = DataKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.badrinath.DataKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hackathon.app/Hackathon";
+			};
+			name = Debug;
+		};
+		056424F31FB6D118008028A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BW3GXH3U84;
+				INFOPLIST_FILE = DataKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.badrinath.DataKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hackathon.app/Hackathon";
 			};
 			name = Release;
 		};
@@ -951,6 +1297,24 @@
 			buildConfigurations = (
 				052AEE6B1FB418DC00F799D0 /* Debug */,
 				052AEE6C1FB418DC00F799D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		056424F41FB6D118008028A6 /* Build configuration list for PBXNativeTarget "DataKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				056424F01FB6D118008028A6 /* Debug */,
+				056424F11FB6D118008028A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		056424F61FB6D118008028A6 /* Build configuration list for PBXNativeTarget "DataKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				056424F21FB6D118008028A6 /* Debug */,
+				056424F31FB6D118008028A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
