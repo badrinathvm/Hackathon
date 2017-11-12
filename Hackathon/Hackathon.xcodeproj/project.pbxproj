@@ -29,6 +29,7 @@
 		05BE888E1FB791B500C3AF5D /* BagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE888D1FB791B500C3AF5D /* BagTableViewCell.swift */; };
 		05BE88911FB7B3E900C3AF5D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE88901FB7B3E900C3AF5D /* NetworkService.swift */; };
 		05BE88941FB7B6C000C3AF5D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE88931FB7B6C000C3AF5D /* Product.swift */; };
+		05BE889A1FB7BE2400C3AF5D /* MessageHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE88991FB7BE2400C3AF5D /* MessageHomeViewController.swift */; };
 		05FFFC341FB6D922006AA8A7 /* HMSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FFFC331FB6D893006AA8A7 /* HMSegmentedControl.swift */; };
 		05FFFC351FB6D924006AA8A7 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FFFC311FB6D893006AA8A7 /* Enums.swift */; };
 		05FFFC361FB6D927006AA8A7 /* HMScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FFFC321FB6D893006AA8A7 /* HMScrollView.swift */; };
@@ -140,6 +141,7 @@
 		05BE88901FB7B3E900C3AF5D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		05BE88931FB7B6C000C3AF5D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		05BE88951FB7B7C500C3AF5D /* no_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = no_image.jpg; sourceTree = "<group>"; };
+		05BE88991FB7BE2400C3AF5D /* MessageHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageHomeViewController.swift; sourceTree = "<group>"; };
 		05FFFC311FB6D893006AA8A7 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		05FFFC321FB6D893006AA8A7 /* HMScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMScrollView.swift; sourceTree = "<group>"; };
 		05FFFC331FB6D893006AA8A7 /* HMSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMSegmentedControl.swift; sourceTree = "<group>"; };
@@ -288,14 +290,12 @@
 		052AEE5E1FB418D800F799D0 /* HackathonMessage */ = {
 			isa = PBXGroup;
 			children = (
+				05BE889B1FB7CC5400C3AF5D /* customTabs */,
+				05BE88981FB7BE0C00C3AF5D /* controller */,
 				05BE88921FB7B6A100C3AF5D /* Model */,
 				05BE888F1FB7B3CF00C3AF5D /* Network */,
 				05BE888A1FB7916D00C3AF5D /* View */,
 				05FFFC381FB6DA28006AA8A7 /* HackathonMessage.entitlements */,
-				05FFFC321FB6D893006AA8A7 /* HMScrollView.swift */,
-				05FFFC311FB6D893006AA8A7 /* Enums.swift */,
-				05FFFC331FB6D893006AA8A7 /* HMSegmentedControl.swift */,
-				052AEE5F1FB418D800F799D0 /* MessagesViewController.swift */,
 				052AEE611FB418D800F799D0 /* MainInterface.storyboard */,
 				052AEE641FB418D800F799D0 /* Assets.xcassets */,
 				05BE88951FB7B7C500C3AF5D /* no_image.jpg */,
@@ -368,6 +368,25 @@
 				05BE88931FB7B6C000C3AF5D /* Product.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		05BE88981FB7BE0C00C3AF5D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				052AEE5F1FB418D800F799D0 /* MessagesViewController.swift */,
+				05BE88991FB7BE2400C3AF5D /* MessageHomeViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		05BE889B1FB7CC5400C3AF5D /* customTabs */ = {
+			isa = PBXGroup;
+			children = (
+				05FFFC311FB6D893006AA8A7 /* Enums.swift */,
+				05FFFC321FB6D893006AA8A7 /* HMScrollView.swift */,
+				05FFFC331FB6D893006AA8A7 /* HMSegmentedControl.swift */,
+			);
+			name = customTabs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -835,6 +854,7 @@
 				05BE88911FB7B3E900C3AF5D /* NetworkService.swift in Sources */,
 				05FFFC341FB6D922006AA8A7 /* HMSegmentedControl.swift in Sources */,
 				05BE88941FB7B6C000C3AF5D /* Product.swift in Sources */,
+				05BE889A1FB7BE2400C3AF5D /* MessageHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

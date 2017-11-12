@@ -1,10 +1,3 @@
-//
-//  HMSegmentedControl.swift
-//  HMSegmentedControl
-//
-//  Created by 伯驹 黄 on 2017/6/13.
-//  Copyright © 2017年 伯驹 黄. All rights reserved.
-//
 
 import UIKit
 
@@ -1044,7 +1037,7 @@ public class HMSegmentedControl: UIControl {
     // MARK: - Styling Support
     var resultingTitleTextAttributes: HMAttributes {
         var resultingAttrs: HMAttributes = [
-            .font:UIFont(name: "Avenir Next", size: 14),
+            .font:UIFont(name: "Avenir Next Bold", size: 14),
             .foregroundColor: UIColor.red
         ]
 

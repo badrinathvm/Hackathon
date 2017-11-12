@@ -23,33 +23,7 @@ class MessagesViewController: MSMessagesAppViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.tableView.contentInset = UIEdgeInsetsMake(50, 0, 0, 0)
-        
-        // Minimum code required to use the segmented control with the default styling.
-        style1()
-        
-        //Make a network call and get product Data
-        
-    }
-    
-    func style1() {
-        let segmentedControl = HMSegmentedControl(sectionTitles: ["Gift Cards", "What's New", "Bag"])
-        segmentedControl.frame = CGRect(x: 0, y: 20, width: viewWidth, height: 40)
-        segmentedControl.autoresizingMask = [.flexibleRightMargin, .flexibleWidth]
-        segmentedControl.addTarget(self, action: #selector(segmentedControlChangedValue), for: .valueChanged)
-        view.addSubview(segmentedControl)
-    }
-    
-    @objc
-    func segmentedControlChangedValue(_ segmentedControl: HMSegmentedControl) {
-        print("Selected index \(segmentedControl.selectedSegmentIndex) (via UIControlEventValueChanged)")
-        
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.tableView.contentInset = UIEdgeInsetsMake(25, 0, 0, 0)
     }
 }
 
